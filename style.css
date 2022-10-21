@@ -1,0 +1,93 @@
+.container {
+  justify-items: center;
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#Title {
+  text-align: center;
+  background-color: #d6d58e;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 10px 10px 8px #888888;
+  color: black;
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#PartOne {
+  text-align: left;
+  background-color: #005c53;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#PartTwo {
+  text-align: left;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 10px 10px 8px #888888;
+  color: black;
+}
+
+#PartThree {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+#PartFour {
+  text-align: left;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 10px 10px 8px #888888;
+  color: white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column2 {
+  float: left;
+  width: 35%;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+a {
+  color: rgb(229, 150, 236);
+
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.new-web {
+  padding: 3%;
+  font-size: larger;
+}
